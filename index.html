@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>A Pen by  Julie Laursen</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+         <!doctype html>
+  <html>
+  <head>
+    <title>Julie's Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="pagestyle">
+    <h1>Table of Contents</h1>
+    <div class="concept">
+    <ol type ="i">
+      <li>
+        <a href="#1-i">The basics of the web and HTML</a>
+      </li>
+      <li>
+        <a href="#1-ii">Computers are Stupid and Thinking Like a Programmer</a>
+      </li>
+      <li>
+        <a href="#1-iii">Whitespace, Inline, Block and Container Elements</a>
+      </li>
+      <li>
+        <a href="#2-i">HTML and CSS</a>
+      </li>
+      <li>
+        <a href="#2-ii">DOM and Tree Structure</a>
+      </li>
+      <li>
+        <a href="#2-iii">The Box Model in HTML/CSS</a>
+      </li>
+      <li>
+        <a href="#2-iv">Box Positioning in HTML/CSS</a>
+      </li>
+      <li>
+        <a href="#2-v">Validation tools</a>
+      </li>
+      <li>
+        <a href="#2-vi">Appendix</a>
+      </li>
+      </ol>
+    </div>
+  <div>
+    <h1> Lesson 1 Notes: HTML and the WWW </h1>
+  </div>
+  <div class="basics" id="1-i">
+    <h2> The basics of the Web and HTML</h2>
+  </div>
+  <!-- these are notes from 1.1 The Basics of the Web -->
+    <div class="concept" id="conceptid">
+  <p>
+  HTML stands for hypertext markup language and is what glues everything on the web together. It makes the web web-like by using <em>hyperlinks</em>. It was invented in 1990s and has over 30 billion pages. Although the main type of document on the web is HTML, the web contains all kinds of files: plain text, HTML, images, videos and audio. The major pieces of the web are the user, the computer (which has a browser), the Internet, and the Server. The web works as follows: a user types the URL of a website into a browser, the computer then sends an HTTP request to a server, then the server finds the appropriate HTML documents and sends it back to the computer which then reads it and displays it in its browser to the user.
+  </p>
+  <p>
+  HTML documents are the heart of the web, and HTML is made up of text content (which is what you see) and markup content (which affects how it looks). The markup itself is written using tags. Opening tags and closing tags with content in between form HTML elements. The opening and closing tags have the same name but the closing tag has a backslash before it. Tags include the &lt;b> (bold) tag, &lt;em> (italic), &lt;br> (line break), etc. Void tags have no closing tags because they have no content within them. Tags could also include attributes such as the href attribute inclosed in the “anchor” tag &lt;a href=”URL”>. Src and alt are also attributes. An example of an image that describes how I'm feeling right now:
+    </p>
+    </div>
+    <a href="http://imgur.com/16vR2j8"><img src="http://i.imgur.com/16vR2j8.jpg" title="source: imgur.com" alt="This image is broken"/></a>
+      <div class="ReferTOC">
+        <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+          </div>
+  <div class="stupid" id="1-ii">
+    <h2> Computers are Stupid and Thinking Like a Programmer</h2>
+  </div>
+    <div class="concept">
+  <p>
+    Remember computers take instructions very literally. They're sensitive to small types and mistakes and often programmers have to "debug" to track and correct their mistakes.<br>
+    <br>
+    Technological empathy involves five concepts:
+    <br>
+      <strong>Procedural Thinking.</strong>
+    Procedural thinking involves creating perfectly clear and unambiguous instructions for a computer to follow (because remember, they're stupid)<br>
+      <strong>Abstract Thinking</strong>
+    Abstract thinking means finding similarity, or as programmers would say, generality amongst seemingly different things and avoid unnecessary repetition. <em><strong>Unnecessary repitition</strong></em> is important because when programmers don't avoid it, they can type or copy paste the same code (often with minor errors) many times, and then when they have to change something, easily miss changing all instances, leading to nasty errors!<br>
+    <strong>Systems Thinking</strong>
+    This happens hwen you break a big problem into small er pieces.<br>
+    <strong>Technological empathy</strong>
+    This is the ability to understand how computers work and what it's good and bad at doing<br>
+    <strong>Debugging</strong>
+    Debugging is a systematic process of relentlessly identifying the cause of a computer program that doesn't work.<br>
+    </div>
+  <p>
+   <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+      </div>
+  <div class="inline" id="1-iii">  
+    <h2> Whitespace, Inline, Block and Container Elements </h2>
+  </div>
+    <div class="concept">
+  <p>
+    The &lt;br> tag represents “inline” formatting where the markup signifies end of the a line, while the &lt;p> (paragraph) tag represents the “block” formatting, where the markup signifies an invisible box around the text. Span and div are container elements. Span is inline and div is block. These elements only contain content and styles can be attached to them to change the way they display that content. 
+  </p>
+    </div>
+  <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+  </div>
+ <h1> Lesson 2 Notes: Creating a Structured Document with HTML </h1>
+    <div class="HTML" id="2-i">
+  <h2> HTML and CSS </h2>
+     </div>
+    <div class="concept">
+  <p>
+      HTML and CSS are both considered "languages." HTML is the language of the web and has syntax and rules. HTML controls the structure of a webpage and CSS controls the style of a webpage. HTML provides the browser with info on what style (CSS) to use and where to get it from.
+    <br>
+    <br>
+      Here is a helpful Wiki page on inheritance: <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Cascading Style Sheets Inheritance</a>
+    <br>
+      Here is a helpful Udacity CSS style guide: <a href="http://udacity.github.io/frontend-nanodegree-styleguide/"> CSS Style Guide</a>
+  </p>
+    </div>
+  <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+      </div>
+    <p> 
+    <div class="DOM" id="2-ii">
+  <h2>DOM and Tree Structures</h2>
+    </div>
+    <div class="concept">
+  <p>
+  When programmers talk about the DOM (domain object model), they are talking about the tree-like structure of a page. A tree diagram is a way of representing the hierarchical nature of a structure in graphical form. Tree elements are called "nodes" and lines connecting elements are called "branches." <br><br>
+  Structure is important here because the more indented an element is, the more deeply nested its corresponding "box" is. This makes it easier to skim the "tree" and see which elements are the "parents" and "children" of eachother.
+  A good reference on branches: <a href="http://en.wikipedia.org/wiki/Tree_structure">Tree_structures</a>
+  </p>
+    </div>
+        <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+      </div>
+    <div class="Box_model" id="2-iii">
+      <h2>The Box model in HTML/CSS</h2>
+    </div>
+    <div class="concept">
+  <p> The box model in HTML consists of margin, border, padding and content in that order with content in the center of the box. To style the box size in CSS use box-sizing: border-box and this will include the border and the padding along with the size of the box for ease of use. You can set boxes in size as either a set number of pixels or as percentages. If you set it to pixels, the browser will take that exact size and will not change responsively with the screen. If you set the box to a percentage, it will change along with the screen.
+  </p>
+    </div>
+        <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+      </div>
+    <div class="Box_positioning" id="2-iv">
+  <h2>Box Positioning in HTML/CSS</h2>
+    </div>
+  <p>
+    <div class="concept">
+    Divs are block elements and not inline, so by default they take up the entire width of a page. Adding the display: flex will override this behavior and let divs appear next to eachother. 
+    <br>
+    <br>
+    A good link to information about flex is here: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">A Guide to Flexbox</a>
+    </div>
+        <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+      </div>
+          <div class="Validation_Tools" id="2-v">
+      <h2>Validation Tools</h2>
+    </div>
+  <div class="concept">
+    <p>
+   Using a validation tool ensurs you have produced valid HTML and CSS coding. The W3C tool <a href="http://validator.w3.org/#validate_by_input">Validate By Input</a> is an example of markup validation.
+  </p>
+    </div>
+        <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TableOfContents">Back to Table of Contents</a></span></span>
+      <div>
+    
+      <div class="Appendix" id="2-vi">
+      <h2>Appendix and Useful links</h2>
+    </div>
+  <p>
+    <div class="appendix" id="text-appendix"><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/index.html">Sample Page and Assets</a><p>
+      <a href="http://learn-2-code.appspot.com/">Andy's Project</a></p>
+      <p><a href="https://css-tricks.com/how-css-selectors-work/">CSS Selectors</a></p>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla CSS reference</a>
+      <p><a href="http://discussions.udacity.com/t/stage-1-office-hours/16000/4">Divs, Spans, Selectors OH MY!</a></p>
+      <p><a href="https://plus.google.com/events/cb4erijb0rfeen0c95mcutu1mfo?authkey=CM6vuqD859S5NQ">Office Hours 1 video</a></p>
+      <p><a href="http://learn-2-code.appspot.com/additional_resources/#topic-1">HTML resources</a></p>
+         </div>
+       </div>
+      </div>
+    </div>
+</body>
+    
+    
+    
+    
+    
+  </body>
+</html>
